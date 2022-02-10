@@ -39,7 +39,7 @@ def profile():
     date = format_date_joined(unformatted_date)
 
     name = "James Iverson"
-    username = "jiverson"
+    username = "@jiverson"
     parish, country = "Kingston", "Jamaica"
     bio = "I am smart and talented young man who loves website design and development. Contact me if you'd like to work together on a new project."
     num_posts, num_followers, num_follows = 24,824,248    
