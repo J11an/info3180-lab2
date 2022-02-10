@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<body>
+
+<div class="container">
+
+    <div class="profilecard">
+
+    <div class="ptop">
+        
+        <div class="topcontents">
+
+            <img src="{{ url_for('static', filename='./profilepic.svg') }}" alt="p_photo"class ="profilepic">    
+    
+            <h1>{{name}}</h1>
+            <p class = "top">{{username}}</p>
+            <p class = "top">{{parish}}, {{country}}</p>
+            <p class = "top">Joined {{date_joined}}</p>
+        
+
+
+        </div>
+    </div>
+
+    <div class="pbottom">
+
+        <div class="bottomcontents">
+
+            <p>{{bio}}</p>
+            
+            <div class="profilerow">
+
+                <div class="box1">
+                    <p>{{num_posts}}</p>
+                    <p class = "sub">Posts</p>
+                </div>
+                <div class="box2">
+                    <p>{{num_follows}}</p>
+                    <p class = "sub">Following</p>
+                </div>
+                <div class="box3">
+                    <p>{{num_followers}}</p>
+                    <p class = "sub">Followers</p>    
+                </div>
+            </div>
+
+        
+            <button class = "follow">Follow</button>
+
+        </div>
+    
+
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}
